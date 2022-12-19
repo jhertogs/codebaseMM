@@ -14,7 +14,7 @@ for($i= 0; $i<$omvang; $i = $i +2) {
     //loopt zo lang $j kleiner en gelijk is aan i$ dus print steeds 2 "*" meer (want er gaat steeds 2 bij $i op
     // als de 1ste loop loopt)
     for($j=0; $j<=$i; $j++) {
-        echo"*";
+        echo"•";
     }
     echo"\n";
     $spatie_teller--;
@@ -30,7 +30,7 @@ for($y= 0; $omvang>=$y; $omvang = $omvang -2) {
     // $omvang in de 1ste loop)
 
     for($f=0; $f<=$omvang; $f++){
-        echo"*";
+        echo"•";
         
         
     }
