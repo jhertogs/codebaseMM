@@ -1,6 +1,16 @@
 <?php 
 //variables & berekening
 $omvang=readline("voer een omvang in voor je diamant:");
+
+
+
+
+if(ctype_digit($omvang) && $omvang > 1) {
+    
+
+if($omvang != 1) {
+   ++$omvang; 
+}
 $spatie_teller= ceil($omvang / 2);
 
 //for loop pyramide 1 (Loopt de helft van omvang keer)
@@ -31,11 +41,15 @@ for($y= 0; $omvang>=$y; $omvang = $omvang -2) {
 
     for($f=0; $f<=$omvang; $f++){
         echo"•";
-        
-        
     }
+
     echo "\n";
     $spatie_teller++;
 }
 
+}
+else{
+    echo "INVALID INPUT";
+    exit;
+}
 ?>
